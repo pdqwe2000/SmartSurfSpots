@@ -19,16 +19,19 @@ namespace SmartSurfSpots.Services.Implementations
             _jwtHelper = jwtHelper;
         }
 
+        /// <summary>
+        /// Regista um novo utilizador, faz hash da password e gera o primeiro token.
+        /// </summary>
         public async Task<LoginResponse> RegisterAsync(RegisterRequest request)
         {
-            // Verificar se email já existe
+            // 1. Validar unicidade
             var existingUser = await _userRepository.GetByEmailAsync(request.Email);
             if (existingUser != null)
             {
                 throw new Exception("Email already registered");
             }
 
-            // Criar novo utilizador
+            // 2. Criar entidade e Hash da Password (Nunca guardar plain text!)
             var user = new User
             {
                 Name = request.Name,
@@ -39,7 +42,7 @@ namespace SmartSurfSpots.Services.Implementations
 
             await _userRepository.AddAsync(user);
 
-            // Gerar token
+            // 3. Gerar token para login automático após registo
             var token = _jwtHelper.GenerateToken(user);
 
             return new LoginResponse
@@ -54,50 +57,34 @@ namespace SmartSurfSpots.Services.Implementations
             };
         }
 
+        /// <summary>
+        /// Verifica credenciais e retorna o token de acesso.
+        /// </summary>
         public async Task<LoginResponse> LoginAsync(LoginRequest request)
         {
-            // Buscar utilizador por email
             var user = await _userRepository.GetByEmailAsync(request.Email);
-            if (user == null)
+
+            // É boa prática usar mensagens genéricas para não revelar se o email existe ou não
+            if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
             {
                 throw new Exception("Invalid email or password");
             }
 
-            // Verificar password
-            if (!BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
-            {
-                throw new Exception("Invalid email or password");
-            }
-
-            // Gerar token
             var token = _jwtHelper.GenerateToken(user);
 
             return new LoginResponse
             {
                 Token = token,
-                User = new UserDto
-                {
-                    Id = user.Id,
-                    Name = user.Name,
-                    Email = user.Email
-                }
+                User = new UserDto { Id = user.Id, Name = user.Name, Email = user.Email }
             };
         }
 
         public async Task<UserDto> GetUserByIdAsync(int userId)
         {
             var user = await _userRepository.GetByIdAsync(userId);
-            if (user == null)
-            {
-                throw new Exception("User not found");
-            }
+            if (user == null) throw new Exception("User not found");
 
-            return new UserDto
-            {
-                Id = user.Id,
-                Name = user.Name,
-                Email = user.Email
-            };
+            return new UserDto { Id = user.Id, Name = user.Name, Email = user.Email };
         }
     }
-}  
+}

@@ -22,6 +22,7 @@ namespace SmartSurfSpots.Services.Implementations
         {
             var spots = await _spotRepository.GetSpotsWithCreatorAsync();
 
+            // Mapeamento manual Entity -> DTO
             return spots.Select(s => new SpotDto
             {
                 Id = s.Id,
@@ -30,7 +31,7 @@ namespace SmartSurfSpots.Services.Implementations
                 Longitude = s.Longitude,
                 Description = s.Description,
                 Level = s.Level.ToString(),
-                CreatedBy = s.Creator?.Name
+                CreatedBy = s.Creator?.Name // Null check seguro
             });
         }
 
@@ -38,10 +39,7 @@ namespace SmartSurfSpots.Services.Implementations
         {
             var spot = await _spotRepository.GetSpotWithDetailsAsync(id);
 
-            if (spot == null)
-            {
-                throw new Exception("Spot not found");
-            }
+            if (spot == null) throw new Exception("Spot not found");
 
             return new SpotDto
             {
@@ -63,13 +61,14 @@ namespace SmartSurfSpots.Services.Implementations
                 Latitude = request.Latitude,
                 Longitude = request.Longitude,
                 Description = request.Description,
-                Level = (SpotLevel)request.Level,
+                Level = (SpotLevel)request.Level, // Cast int -> Enum
                 CreatedBy = userId,
                 CreatedAt = DateTime.Now
             };
 
             await _spotRepository.AddAsync(spot);
 
+            // Recarregar para obter os dados completos (incluindo relacionamentos se necessário)
             var createdSpot = await _spotRepository.GetSpotWithDetailsAsync(spot.Id);
 
             return new SpotDto
@@ -87,13 +86,9 @@ namespace SmartSurfSpots.Services.Implementations
         public async Task<SpotDto> UpdateSpotAsync(int id, UpdateSpotRequest request, int userId)
         {
             var spot = await _spotRepository.GetByIdAsync(id);
+            if (spot == null) throw new Exception("Spot not found");
 
-            if (spot == null)
-            {
-                throw new Exception("Spot not found");
-            }
-
-            // Verificar se o utilizador é o criador
+            // Validação de Segurança: Apenas o dono pode editar
             if (spot.CreatedBy != userId)
             {
                 throw new Exception("You can only update your own spots");
@@ -107,30 +102,24 @@ namespace SmartSurfSpots.Services.Implementations
 
             await _spotRepository.UpdateAsync(spot);
 
-            var updatedSpot = await _spotRepository.GetSpotWithDetailsAsync(spot.Id);
-
             return new SpotDto
             {
-                Id = updatedSpot.Id,
-                Name = updatedSpot.Name,
-                Latitude = updatedSpot.Latitude,
-                Longitude = updatedSpot.Longitude,
-                Description = updatedSpot.Description,
-                Level = updatedSpot.Level.ToString(),
-                CreatedBy = updatedSpot.Creator?.Name
+                Id = spot.Id,
+                Name = spot.Name,
+                Latitude = spot.Latitude,
+                Longitude = spot.Longitude,
+                Description = spot.Description,
+                Level = spot.Level.ToString(),
+                CreatedBy = spot.Creator?.Name
             };
         }
 
         public async Task<bool> DeleteSpotAsync(int id, int userId)
         {
             var spot = await _spotRepository.GetByIdAsync(id);
+            if (spot == null) throw new Exception("Spot not found");
 
-            if (spot == null)
-            {
-                throw new Exception("Spot not found");
-            }
-
-            // Verificar se o utilizador é o criador
+            // Validação de Segurança: Apenas o dono pode apagar
             if (spot.CreatedBy != userId)
             {
                 throw new Exception("You can only delete your own spots");

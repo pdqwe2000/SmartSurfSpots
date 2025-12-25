@@ -23,25 +23,20 @@ namespace SmartSurfSpots.Services.Implementations
 
         public async Task<WeatherDto> GetWeatherForSpotAsync(int spotId)
         {
-            // Buscar o spot
             var spot = await _spotRepository.GetByIdAsync(spotId);
-            if (spot == null)
-            {
-                throw new Exception("Spot not found");
-            }
+            if (spot == null) throw new Exception("Spot not found");
 
-            // Formatar coordenadas com invariant culture (usar ponto em vez de vírgula)
+            // InvariantCulture é CRUCIAL aqui:
+            // Garante que a latitude 10.5 seja "10.5" (formato API) e não "10,5" (formato PT)
             var lat = spot.Latitude.ToString("F4", System.Globalization.CultureInfo.InvariantCulture);
             var lon = spot.Longitude.ToString("F4", System.Globalization.CultureInfo.InvariantCulture);
 
-            // Chamar API Open-Meteo para dados meteorológicos
+            // 1. Obter dados Meteorológicos (Vento, Temp)
             var weatherUrl = $"https://api.open-meteo.com/v1/forecast" +
-                           $"?latitude={lat}" +
-                           $"&longitude={lon}" +
+                           $"?latitude={lat}&longitude={lon}" +
                            $"&current=temperature_2m,wind_speed_10m,wind_direction_10m,weather_code" +
                            $"&hourly=temperature_2m,wind_speed_10m,wind_direction_10m" +
-                           $"&timezone=auto" +
-                           $"&forecast_days=3";
+                           $"&timezone=auto&forecast_days=3";
 
             string weatherResponse;
             try
@@ -50,7 +45,7 @@ namespace SmartSurfSpots.Services.Implementations
             }
             catch (HttpRequestException ex)
             {
-                throw new Exception($"Erro ao obter dados meteorológicos: {ex.Message}");
+                throw new Exception($"Erro ao conectar com Open-Meteo: {ex.Message}");
             }
 
             var weatherData = JsonSerializer.Deserialize<OpenMeteoResponse>(weatherResponse, new JsonSerializerOptions
@@ -58,13 +53,13 @@ namespace SmartSurfSpots.Services.Implementations
                 PropertyNameCaseInsensitive = true
             });
 
-            // Chamar API Open-Meteo Marine para dados de ondas
+            // 2. Obter dados Marinhos (Ondas)
+            // Usamos try-catch separado porque alguns locais (terra firme) podem dar erro na API marinha,
+            // mas queremos mostrar os dados de vento na mesma.
             var marineUrl = $"https://marine-api.open-meteo.com/v1/marine" +
-                          $"?latitude={lat}" +
-                          $"&longitude={lon}" +
+                          $"?latitude={lat}&longitude={lon}" +
                           $"&hourly=wave_height,wave_period,wave_direction" +
-                          $"&timezone=auto" +
-                          $"&forecast_days=3";
+                          $"&timezone=auto&forecast_days=3";
 
             OpenMeteoMarineResponse marineData = null;
             try
@@ -77,10 +72,10 @@ namespace SmartSurfSpots.Services.Implementations
             }
             catch
             {
-                // Se falhar (locais sem dados marinhos), continua sem dados de ondas
+                // Graceful degradation: Se falhar (ex: spot não é no mar), continua sem ondas.
             }
 
-            // Mapear dados atuais
+            // 3. Mapear Current Weather
             var current = new CurrentWeather
             {
                 Temperature = weatherData.Current.Temperature_2m,
@@ -90,9 +85,15 @@ namespace SmartSurfSpots.Services.Implementations
                 WeatherDescription = GetWeatherDescription(weatherData.Current.Weather_code)
             };
 
-            // Mapear previsão horária (próximas 24 horas)
+            // 4. Mapear Forecast (Merge de dados de Vento + Ondas)
             var forecast = new List<HourlyForecast>();
-            for (int i = 0; i < Math.Min(24, weatherData.Hourly.Time.Count); i++)
+
+            // Math.Min evita IndexOutOfRange se as APIs retornarem tamanhos diferentes
+            int count = weatherData.Hourly.Time.Count;
+            if (marineData?.Hourly?.Time != null) count = Math.Min(count, marineData.Hourly.Time.Count);
+
+            // Limitamos a 24 horas para não sobrecarregar o frontend
+            for (int i = 0; i < Math.Min(24, count); i++)
             {
                 var hourlyForecast = new HourlyForecast
                 {
@@ -100,6 +101,7 @@ namespace SmartSurfSpots.Services.Implementations
                     Temperature = weatherData.Hourly.Temperature_2m[i],
                     WindSpeed = weatherData.Hourly.Wind_speed_10m[i],
                     WindDirection = weatherData.Hourly.Wind_direction_10m[i],
+                    // Operador ?. e ?? (Null Coalescing) trata o caso de não haver dados marinhos
                     WaveHeight = marineData?.Hourly?.Wave_height?[i] ?? 0,
                     WavePeriod = marineData?.Hourly?.Wave_period?[i] ?? 0,
                     WaveDirection = marineData?.Hourly?.Wave_direction?[i].ToString() ?? "N/A"
@@ -119,7 +121,6 @@ namespace SmartSurfSpots.Services.Implementations
 
         private string GetWeatherDescription(int weatherCode)
         {
-            // WMO Weather interpretation codes
             return weatherCode switch
             {
                 0 => "Céu limpo",
@@ -141,8 +142,6 @@ namespace SmartSurfSpots.Services.Implementations
                 80 => "Aguaceiros leves",
                 81 => "Aguaceiros moderados",
                 82 => "Aguaceiros violentos",
-                85 => "Aguaceiros de neve leves",
-                86 => "Aguaceiros de neve fortes",
                 95 => "Trovoada",
                 96 => "Trovoada com granizo leve",
                 99 => "Trovoada com granizo forte",
