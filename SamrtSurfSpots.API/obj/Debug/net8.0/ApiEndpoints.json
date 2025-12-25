@@ -88,6 +88,80 @@
     ]
   },
   {
+    "ContainingType": "SmartSurfSpots.API.Controllers.CheckInsController",
+    "Method": "CreateCheckIn",
+    "RelativePath": "api/CheckIns",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SmartSurfSpots.Domain.DTOs.CreateCheckInRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartSurfSpots.API.Controllers.CheckInsController",
+    "Method": "GetCheckInById",
+    "RelativePath": "api/CheckIns/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartSurfSpots.API.Controllers.CheckInsController",
+    "Method": "DeleteCheckIn",
+    "RelativePath": "api/CheckIns/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartSurfSpots.API.Controllers.CheckInsController",
+    "Method": "GetMyCheckIns",
+    "RelativePath": "api/CheckIns/my",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartSurfSpots.API.Controllers.CheckInsController",
+    "Method": "GetCheckInsBySpot",
+    "RelativePath": "api/CheckIns/spot/{spotId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "spotId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SmartSurfSpots.API.Controllers.SpotsController",
     "Method": "GetAllSpots",
     "RelativePath": "api/Spots",

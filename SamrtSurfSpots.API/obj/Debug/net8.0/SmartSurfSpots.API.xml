@@ -41,6 +41,31 @@
             <response code="401">Utilizador não autenticado ou token inválido.</response>
             <response code="400">Erro ao processar o pedido ou utilizador não encontrado.</response>
         </member>
+        <member name="M:SmartSurfSpots.API.Controllers.CheckInsController.CreateCheckIn(SmartSurfSpots.Domain.DTOs.CreateCheckInRequest)">
+            <summary>
+            Fazer check-in num spot
+            </summary>
+        </member>
+        <member name="M:SmartSurfSpots.API.Controllers.CheckInsController.GetMyCheckIns">
+            <summary>
+            Obter os meus check-ins
+            </summary>
+        </member>
+        <member name="M:SmartSurfSpots.API.Controllers.CheckInsController.GetCheckInsBySpot(System.Int32)">
+            <summary>
+            Obter check-ins de um spot específico
+            </summary>
+        </member>
+        <member name="M:SmartSurfSpots.API.Controllers.CheckInsController.GetCheckInById(System.Int32)">
+            <summary>
+            Obter detalhes de um check-in
+            </summary>
+        </member>
+        <member name="M:SmartSurfSpots.API.Controllers.CheckInsController.DeleteCheckIn(System.Int32)">
+            <summary>
+            Apagar check-in (apenas o próprio)
+            </summary>
+        </member>
         <member name="M:SmartSurfSpots.API.Controllers.SpotsController.GetAllSpots">
             <summary>
             Lista todos os spots de surf disponíveis.

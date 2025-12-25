@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Smart Surf Spots API",
-    "description": "API para gestão de spots de surf com autenticação JWT",
+    "description": "API para gestão de spots de surf com autenticação JWT e integração meteorológica.",
     "version": "v1"
   },
   "paths": {
@@ -124,6 +124,121 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/api/CheckIns": {
+      "post": {
+        "tags": [
+          "CheckIns"
+        ],
+        "summary": "Fazer check-in num spot",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCheckInRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCheckInRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCheckInRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CheckIns/my": {
+      "get": {
+        "tags": [
+          "CheckIns"
+        ],
+        "summary": "Obter os meus check-ins",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CheckIns/spot/{spotId}": {
+      "get": {
+        "tags": [
+          "CheckIns"
+        ],
+        "summary": "Obter check-ins de um spot específico",
+        "parameters": [
+          {
+            "name": "spotId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/CheckIns/{id}": {
+      "get": {
+        "tags": [
+          "CheckIns"
+        ],
+        "summary": "Obter detalhes de um check-in",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "CheckIns"
+        ],
+        "summary": "Apagar check-in (apenas o próprio)",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -426,26 +541,62 @@
   },
   "components": {
     "schemas": {
+      "CreateCheckInRequest": {
+        "required": [
+          "spotId"
+        ],
+        "type": "object",
+        "properties": {
+          "spotId": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "notes": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateSpotRequest": {
+        "required": [
+          "latitude",
+          "level",
+          "longitude",
+          "name"
+        ],
         "type": "object",
         "properties": {
           "name": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 100,
+            "minLength": 3,
+            "type": "string"
           },
           "latitude": {
+            "maximum": 90,
+            "minimum": -90,
             "type": "number",
             "format": "double"
           },
           "longitude": {
+            "maximum": 180,
+            "minimum": -180,
             "type": "number",
             "format": "double"
           },
           "description": {
+            "maxLength": 1000,
+            "minLength": 0,
             "type": "string",
             "nullable": true
           },
           "level": {
+            "maximum": 3,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
           }
@@ -524,17 +675,25 @@
         "additionalProperties": false
       },
       "UpdateSpotRequest": {
+        "required": [
+          "name"
+        ],
         "type": "object",
         "properties": {
           "name": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 100,
+            "minLength": 3,
+            "type": "string"
           },
           "latitude": {
+            "maximum": 90,
+            "minimum": -90,
             "type": "number",
             "format": "double"
           },
           "longitude": {
+            "maximum": 180,
+            "minimum": -180,
             "type": "number",
             "format": "double"
           },
@@ -543,6 +702,8 @@
             "nullable": true
           },
           "level": {
+            "maximum": 3,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
           }
@@ -553,7 +714,7 @@
     "securitySchemes": {
       "Bearer": {
         "type": "apiKey",
-        "description": "JWT Authorization header usando o esquema Bearer. Exemplo: 'Bearer {token}'",
+        "description": "Insira o token JWT desta forma: Bearer {seu_token}",
         "name": "Authorization",
         "in": "header"
       }

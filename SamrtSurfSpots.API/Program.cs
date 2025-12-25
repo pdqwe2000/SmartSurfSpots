@@ -124,11 +124,12 @@ builder.Services.AddHttpClient();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ISpotService, SpotService>();
 builder.Services.AddScoped<IWeatherService, WeatherService>();
+builder.Services.AddScoped<ICheckInService, CheckInService>();
 
 // Helpers e Utilitários
 builder.Services.AddScoped<JwtHelper>();
 
-// Configuração de CORS (Permitir acesso de qualquer origem - útil para desenvolvimento frontend)
+// Configuração de CORS (Permitir acesso de qualquer origem)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
