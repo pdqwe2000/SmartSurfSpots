@@ -13,30 +13,38 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// ==============================================================================
+// 1. CONFIGURAÇÃO DE SERVIÇOS DO CORE (INJEÇÃO DE DEPENDÊNCIAS)
+// ==============================================================================
+
+// Adiciona suporte para Controllers (API Endpoints)
 builder.Services.AddControllers();
+
+// Adiciona o explorador de endpoints necessário para o Swagger
 builder.Services.AddEndpointsApiExplorer();
 
-// Configurar Swagger com suporte para JWT
+// Configuração avançada do Swagger (Documentação da API)
 builder.Services.AddSwaggerGen(c =>
 {
+    // Metadados básicos da API
     c.SwaggerDoc("v1", new OpenApiInfo
     {
         Title = "Smart Surf Spots API",
         Version = "v1",
-        Description = "API para gestão de spots de surf com autenticação JWT"
+        Description = "API para gestão de spots de surf com autenticação JWT e integração meteorológica."
     });
 
-    // Configurar autenticação JWT no Swagger
+    // Configuração do botão "Authorize" (Cadeado) para testar endpoints protegidos
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
-        Description = "JWT Authorization header usando o esquema Bearer. Exemplo: 'Bearer {token}'",
+        Description = "Insira o token JWT desta forma: Bearer {seu_token}",
         Name = "Authorization",
         In = ParameterLocation.Header,
         Type = SecuritySchemeType.ApiKey,
         Scheme = "Bearer"
     });
 
+    // Exige que o esquema de segurança acima seja usado globalmente
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
@@ -51,25 +59,29 @@ builder.Services.AddSwaggerGen(c =>
             new string[] { }
         }
     });
+
+    // Carregamento dos Comentários XML da API (Controllers)
     var xmlFileApi = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPathApi = Path.Combine(AppContext.BaseDirectory, xmlFileApi);
     c.IncludeXmlComments(xmlPathApi);
 
+    // Carregamento dos Comentários XML do Domain (DTOs)
+    // Verifica se o ficheiro existe para evitar erros se o projeto Domain não tiver XML gerado
     var xmlFileDomain = "SmartSurfSpots.Domain.xml";
     var xmlPathDomain = Path.Combine(AppContext.BaseDirectory, xmlFileDomain);
 
-    // O 'true' no segundo parâmetro ativa os comentários nos Schemas (DTOs)
     if (File.Exists(xmlPathDomain))
     {
+        // O parâmetro 'includeControllerXmlComments: true' garante que as descrições dos DTOs apareçam
         c.IncludeXmlComments(xmlPathDomain, includeControllerXmlComments: true);
     }
 });
 
-// Configurar DbContext
+// Configuração da Base de Dados (Entity Framework Core com SQL Server)
 builder.Services.AddDbContext<SurfDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Configurar JWT Authentication
+// Configuração de Autenticação e JWT
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 var secretKey = jwtSettings["SecretKey"];
 
@@ -80,37 +92,43 @@ builder.Services.AddAuthentication(options =>
 })
 .AddJwtBearer(options =>
 {
+    // Parâmetros de validação do Token
     options.TokenValidationParameters = new TokenValidationParameters
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
+        ValidateIssuer = true,             // Valida quem emitiu o token
+        ValidateAudience = true,           // Valida para quem é o token
+        ValidateLifetime = true,           // Valida se não expirou
+        ValidateIssuerSigningKey = true,   // Valida a assinatura digital
         ValidIssuer = jwtSettings["Issuer"],
         ValidAudience = jwtSettings["Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)),
-        ClockSkew = TimeSpan.Zero
+        ClockSkew = TimeSpan.Zero          // Remove a tolerância de tempo padrão (5min) para expiração
     };
 });
 
+// Ativa o serviço de Autorização
 builder.Services.AddAuthorization();
 
-// Registar Repositories
+// ==============================================================================
+// 2. REGISTO DE DEPENDÊNCIAS PERSONALIZADAS (IOC CONTAINER)
+// ==============================================================================
+
+// Repositórios (Acesso a Dados)
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ISpotRepository, SpotRepository>();
 
-// Registar HttpClient para APIs externas
+// Cliente HTTP (Para chamadas a APIs externas como Open-Meteo)
 builder.Services.AddHttpClient();
 
-// Registar Services
+// Serviços de Domínio (Lógica de Negócio)
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ISpotService, SpotService>();
 builder.Services.AddScoped<IWeatherService, WeatherService>();
 
-// Registar Helpers
+// Helpers e Utilitários
 builder.Services.AddScoped<JwtHelper>();
 
-// Configurar CORS (opcional, útil para frontend)
+// Configuração de CORS (Permitir acesso de qualquer origem - útil para desenvolvimento frontend)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -123,7 +141,11 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// ==============================================================================
+// 3. CONFIGURAÇÃO DO PIPELINE DE PEDIDOS HTTP (MIDDLEWARE)
+// ==============================================================================
+
+// Em ambiente de desenvolvimento, ativa a interface visual do Swagger
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -132,11 +154,15 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Aplica a política de CORS definida acima
 app.UseCors("AllowAll");
 
+// Middleware de Autenticação (Quem és tu?) e Autorização (O que podes fazer?)
+// A ordem aqui é CRUCIAL: AuthN antes de AuthZ
 app.UseAuthentication();
 app.UseAuthorization();
 
+// Mapeia os endpoints dos Controllers para as rotas
 app.MapControllers();
 
 app.Run();
