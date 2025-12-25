@@ -1,0 +1,102 @@
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\appsettings.json
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.staticwebassets.runtime.json
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.staticwebassets.endpoints.json
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.exe
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.deps.json
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.runtimeconfig.json
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.dll
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.pdb
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.AssemblyInfoInputs.cache
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.AssemblyInfo.cs
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.csproj.CoreCompileInputs.cache
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.RazorAssemblyInfo.cache
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.RazorAssemblyInfo.cs
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\scopedcss\bundle\SmartSurfSpots.WebClient.styles.css
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\scopedcss\projectbundle\SmartSurfSpots.WebClient.bundle.scp.css
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.dll
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\refint\SmartSurfSpots.WebClient.dll
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.pdb
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.genruntimeconfig.cache
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\ref\SmartSurfSpots.WebClient.dll
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\appsettings.json
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.staticwebassets.runtime.json
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.staticwebassets.endpoints.json
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.exe
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.deps.json
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.runtimeconfig.json
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.dll
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.pdb
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.AssemblyInfoInputs.cache
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.AssemblyInfo.cs
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.csproj.CoreCompileInputs.cache
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.RazorAssemblyInfo.cache
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.RazorAssemblyInfo.cs
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\scopedcss\bundle\SmartSurfSpots.WebClient.styles.css
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\scopedcss\projectbundle\SmartSurfSpots.WebClient.bundle.scp.css
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.dll
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\refint\SmartSurfSpots.WebClient.dll
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.pdb
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.genruntimeconfig.cache
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\ref\SmartSurfSpots.WebClient.dll
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\appsettings.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.staticwebassets.endpoints.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.staticwebassets.runtime.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.exe
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.deps.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.runtimeconfig.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.dll
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\bin\Debug\net8.0\SmartSurfSpots.WebClient.pdb
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.AssemblyInfoInputs.cache
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.AssemblyInfo.cs
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.csproj.CoreCompileInputs.cache
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.RazorAssemblyInfo.cache
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.RazorAssemblyInfo.cs
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.sourcelink.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\scopedcss\bundle\SmartSurfSpots.WebClient.styles.css
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\scopedcss\projectbundle\SmartSurfSpots.WebClient.bundle.scp.css
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.dll
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\refint\SmartSurfSpots.WebClient.dll
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.pdb
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\SmartSurfSpots.WebClient.genruntimeconfig.cache
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.WebClient\obj\Debug\net8.0\ref\SmartSurfSpots.WebClient.dll

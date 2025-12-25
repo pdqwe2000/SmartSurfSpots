@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSurfSpots.API", "SamrtSurfSpots.API\SmartSurfSpots.API.csproj", "{090870BE-36DF-4BE4-86B6-7F9DBA108650}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSurfSpots.Domain", "SmartSurfSpots.Domain\SmartSurfSpots.Domain.csproj", "{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSurfSpots.Data", "SmartSurfSpots.Data\SmartSurfSpots.Data.csproj", "{1BEE64E4-D55C-4989-AA39-DF3247711665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSurfSpots.Services", "SmartSurfSpots.Services\SmartSurfSpots.Services.csproj", "{B20518AB-7846-449D-A641-A65AE54667CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSurfSpots.SoapService", "SmartSurfSpots.SoapService\SmartSurfSpots.SoapService.csproj", "{32116751-0ED5-4790-BB23-6E985CE90C6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSurfSpots.WebClient", "SmartSurfSpots.WebClient\SmartSurfSpots.WebClient.csproj", "{09AEB94B-A5A6-443D-809F-1BCB9F4B7250}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{090870BE-36DF-4BE4-86B6-7F9DBA108650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{090870BE-36DF-4BE4-86B6-7F9DBA108650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{090870BE-36DF-4BE4-86B6-7F9DBA108650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{090870BE-36DF-4BE4-86B6-7F9DBA108650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BEE64E4-D55C-4989-AA39-DF3247711665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BEE64E4-D55C-4989-AA39-DF3247711665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BEE64E4-D55C-4989-AA39-DF3247711665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BEE64E4-D55C-4989-AA39-DF3247711665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B20518AB-7846-449D-A641-A65AE54667CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B20518AB-7846-449D-A641-A65AE54667CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B20518AB-7846-449D-A641-A65AE54667CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B20518AB-7846-449D-A641-A65AE54667CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32116751-0ED5-4790-BB23-6E985CE90C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32116751-0ED5-4790-BB23-6E985CE90C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32116751-0ED5-4790-BB23-6E985CE90C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32116751-0ED5-4790-BB23-6E985CE90C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09AEB94B-A5A6-443D-809F-1BCB9F4B7250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09AEB94B-A5A6-443D-809F-1BCB9F4B7250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09AEB94B-A5A6-443D-809F-1BCB9F4B7250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09AEB94B-A5A6-443D-809F-1BCB9F4B7250}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2632AA99-1F19-4E75-A472-22AA2C5F1263}
+	EndGlobalSection
+EndGlobal

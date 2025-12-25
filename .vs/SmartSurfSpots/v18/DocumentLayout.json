@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}|SmartSurfSpots.Domain\\SmartSurfSpots.Domain.csproj|c:\\users\\fujimota\\documents\\github\\smartsurfspots\\smartsurfspots.domain\\entities\\checkin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}|SmartSurfSpots.Domain\\SmartSurfSpots.Domain.csproj|solutionrelative:smartsurfspots.domain\\entities\\checkin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}|SmartSurfSpots.Domain\\SmartSurfSpots.Domain.csproj|c:\\users\\fujimota\\documents\\github\\smartsurfspots\\smartsurfspots.domain\\dtos\\spotdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}|SmartSurfSpots.Domain\\SmartSurfSpots.Domain.csproj|solutionrelative:smartsurfspots.domain\\dtos\\spotdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}|SmartSurfSpots.Domain\\SmartSurfSpots.Domain.csproj|c:\\users\\fujimota\\documents\\github\\smartsurfspots\\smartsurfspots.domain\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}|SmartSurfSpots.Domain\\SmartSurfSpots.Domain.csproj|solutionrelative:smartsurfspots.domain\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}|SmartSurfSpots.Domain\\SmartSurfSpots.Domain.csproj|c:\\users\\fujimota\\documents\\github\\smartsurfspots\\smartsurfspots.domain\\dtos\\weatherdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}|SmartSurfSpots.Domain\\SmartSurfSpots.Domain.csproj|solutionrelative:smartsurfspots.domain\\dtos\\weatherdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}|SmartSurfSpots.Domain\\SmartSurfSpots.Domain.csproj|c:\\users\\fujimota\\documents\\github\\smartsurfspots\\smartsurfspots.domain\\dtos\\checkindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}|SmartSurfSpots.Domain\\SmartSurfSpots.Domain.csproj|solutionrelative:smartsurfspots.domain\\dtos\\checkindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{090870BE-36DF-4BE4-86B6-7F9DBA108650}|SamrtSurfSpots.API\\SmartSurfSpots.API.csproj|c:\\users\\fujimota\\documents\\github\\smartsurfspots\\samrtsurfspots.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{090870BE-36DF-4BE4-86B6-7F9DBA108650}|SamrtSurfSpots.API\\SmartSurfSpots.API.csproj|solutionrelative:samrtsurfspots.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{090870BE-36DF-4BE4-86B6-7F9DBA108650}|SamrtSurfSpots.API\\SmartSurfSpots.API.csproj|c:\\users\\fujimota\\documents\\github\\smartsurfspots\\samrtsurfspots.api\\controllers\\weathercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{090870BE-36DF-4BE4-86B6-7F9DBA108650}|SamrtSurfSpots.API\\SmartSurfSpots.API.csproj|solutionrelative:samrtsurfspots.api\\controllers\\weathercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{090870BE-36DF-4BE4-86B6-7F9DBA108650}|SamrtSurfSpots.API\\SmartSurfSpots.API.csproj|c:\\users\\fujimota\\documents\\github\\smartsurfspots\\samrtsurfspots.api\\controllers\\spotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{090870BE-36DF-4BE4-86B6-7F9DBA108650}|SamrtSurfSpots.API\\SmartSurfSpots.API.csproj|solutionrelative:samrtsurfspots.api\\controllers\\spotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CheckIn.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Domain\\Entities\\CheckIn.cs",
+              "RelativeDocumentMoniker": "SmartSurfSpots.Domain\\Entities\\CheckIn.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Domain\\Entities\\CheckIn.cs",
+              "RelativeToolTip": "SmartSurfSpots.Domain\\Entities\\CheckIn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T20:49:07.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Domain\\DTOs\\WeatherDTOs.cs",
+              "RelativeDocumentMoniker": "SmartSurfSpots.Domain\\DTOs\\WeatherDTOs.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Domain\\DTOs\\WeatherDTOs.cs",
+              "RelativeToolTip": "SmartSurfSpots.Domain\\DTOs\\WeatherDTOs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T20:43:57.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SpotDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Domain\\DTOs\\SpotDTOs.cs",
+              "RelativeDocumentMoniker": "SmartSurfSpots.Domain\\DTOs\\SpotDTOs.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Domain\\DTOs\\SpotDTOs.cs",
+              "RelativeToolTip": "SmartSurfSpots.Domain\\DTOs\\SpotDTOs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T20:43:25.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Domain\\DTOs\\AuthDTOs.cs",
+              "RelativeDocumentMoniker": "SmartSurfSpots.Domain\\DTOs\\AuthDTOs.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Domain\\DTOs\\AuthDTOs.cs",
+              "RelativeToolTip": "SmartSurfSpots.Domain\\DTOs\\AuthDTOs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T20:42:58.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CheckInDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Domain\\DTOs\\CheckInDTOs.cs",
+              "RelativeDocumentMoniker": "SmartSurfSpots.Domain\\DTOs\\CheckInDTOs.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Domain\\DTOs\\CheckInDTOs.cs",
+              "RelativeToolTip": "SmartSurfSpots.Domain\\DTOs\\CheckInDTOs.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwDQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T20:42:57.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeatherController.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SamrtSurfSpots.API\\Controllers\\WeatherController.cs",
+              "RelativeDocumentMoniker": "SamrtSurfSpots.API\\Controllers\\WeatherController.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SamrtSurfSpots.API\\Controllers\\WeatherController.cs",
+              "RelativeToolTip": "SamrtSurfSpots.API\\Controllers\\WeatherController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T20:41:56.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SpotsController.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SamrtSurfSpots.API\\Controllers\\SpotsController.cs",
+              "RelativeDocumentMoniker": "SamrtSurfSpots.API\\Controllers\\SpotsController.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SamrtSurfSpots.API\\Controllers\\SpotsController.cs",
+              "RelativeToolTip": "SamrtSurfSpots.API\\Controllers\\SpotsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T20:41:55.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SamrtSurfSpots.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SamrtSurfSpots.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SamrtSurfSpots.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SamrtSurfSpots.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T20:41:54.226Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

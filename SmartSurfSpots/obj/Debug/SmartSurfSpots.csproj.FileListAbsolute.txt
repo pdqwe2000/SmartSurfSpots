@@ -1,0 +1,2 @@
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots\obj\Debug\SmartSurfSpots.csproj.AssemblyReference.cache
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots\obj\Debug\SmartSurfSpots.csproj.CoreCompileInputs.cache

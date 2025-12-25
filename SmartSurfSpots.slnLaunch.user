@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "SamrtSurfSpots.API\\SmartSurfSpots.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "SmartSurfSpots.WebClient\\SmartSurfSpots.WebClient.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

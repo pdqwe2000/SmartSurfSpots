@@ -1,0 +1,6 @@
+@SmartSurfSpots.SoapService_HostAddress = http://localhost:5252
+
+GET {{SmartSurfSpots.SoapService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

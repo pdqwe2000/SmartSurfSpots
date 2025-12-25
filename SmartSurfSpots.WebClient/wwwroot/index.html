@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Surf Spots</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main App Screen -->
+    <div id="app-screen" class="screen">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12c0 0 3-6 9-6s9 6 9 6-3 6-9 6-9-6-9-6z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                </svg>
+                <h1>Smart Surf Spots</h1>
+            </div>
+            <div class="nav-user">
+                <div class="user-avatar">
+                    <span id="user-initials"></span>
+                </div>
+                <span id="user-name"></span>
+                <button class="btn-logout" onclick="logout()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/>
+                    </svg>
+                    Sair
+                </button>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="sidebar">
+                <button class="btn-primary" onclick="showAddSpotModal()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Adicionar Spot
+                </button>
+
+                <h3 class="sidebar-title">Seus Spots de Surf</h3>
+                <div id="spots-list" class="spots-list">
+                    <div class="loading-state">
+                        <div class="spinner"></div>
+                        <p>A carregar spots...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div id="map"></div>
+                <div id="spot-details" class="spot-details hidden">
+                    <button class="close-details" onclick="closeSpotDetails()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Spot Modal -->
+    <div id="add-spot-modal" class="modal hidden">
+        <div class="modal-overlay" onclick="closeAddSpotModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Adicionar Novo Spot</h2>
+                <button class="modal-close" onclick="closeAddSpotModal()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <form id="add-spot-form">
+                <div class="form-group">
+                    <label for="spot-name">Nome do Spot</label>
+                    <input type="text" id="spot-name" placeholder="Ex: Praia de Matosinhos" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="spot-lat">Latitude</label>
+                        <input type="number" step="0.0001" id="spot-lat" placeholder="41.1234" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="spot-lon">Longitude</label>
+                        <input type="number" step="0.0001" id="spot-lon" placeholder="-8.5678" required>
+                    </div>
+                </div>
+                <!-- Added use my location button -->
+                <button type="button" class="btn-location" onclick="useMyLocation()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <line x1="12" y1="2" x2="12" y2="6"></line>
+                        <line x1="12" y1="18" x2="12" y2="22"></line>
+                        <line x1="2" y1="12" x2="6" y2="12"></line>
+                        <line x1="18" y1="12" x2="22" y2="12"></line>
+                    </svg>
+                    <span class="btn-text">Usar a Minha Localização</span>
+                    <span class="btn-loading hidden">
+                        <span class="spinner-small"></span>
+                        A obter localização...
+                    </span>
+                </button>
+                <div class="form-group">
+                    <label for="spot-description">Descrição</label>
+                    <textarea id="spot-description" placeholder="Descreva as características do spot..." rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="spot-level">Nível de Dificuldade</label>
+                    <select id="spot-level" required>
+                        <option value="">Selecione o nível</option>
+                        <option value="1">🟢 Iniciante</option>
+                        <option value="2">🟡 Intermédio</option>
+                        <option value="3">🔴 Avançado</option>
+                    </select>
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" class="btn-secondary" onclick="closeAddSpotModal()">Cancelar</button>
+                    <button type="submit" class="btn-primary-submit">Adicionar Spot</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

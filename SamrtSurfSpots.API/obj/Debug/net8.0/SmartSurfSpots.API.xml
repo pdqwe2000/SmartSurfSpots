@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartSurfSpots.API</name>
+    </assembly>
+    <members>
+        <member name="M:SmartSurfSpots.API.Controllers.AuthController.Register(SmartSurfSpots.Domain.DTOs.RegisterRequest)">
+            <summary>
+            Regista um novo utilizador no sistema.
+            </summary>
+            <remarks>
+            Cria uma nova conta de utilizador com os dados fornecidos e retorna a confirmação.
+            </remarks>
+            <param name="request">O objeto contendo os dados de registo (Nome, Email, Password).</param>
+            <returns>Resultado da operação de registo.</returns>
+            <response code="200">Utilizador registado com sucesso.</response>
+            <response code="400">Falha na validação dos dados ou o utilizador já existe.</response>
+        </member>
+        <member name="M:SmartSurfSpots.API.Controllers.AuthController.Login(SmartSurfSpots.Domain.DTOs.LoginRequest)">
+            <summary>
+            Autentica um utilizador e gera um token de acesso (JWT).
+            </summary>
+            <remarks>
+            Verifica as credenciais (email e password). Se corretas, retorna um token para ser usado nos endpoints protegidos.
+            </remarks>
+            <param name="request">Credenciais de acesso do utilizador.</param>
+            <returns>Token JWT e dados básicos do utilizador.</returns>
+            <response code="200">Login efetuado com sucesso.</response>
+            <response code="400">Credenciais inválidas (email ou password incorretos).</response>
+        </member>
+        <member name="M:SmartSurfSpots.API.Controllers.AuthController.GetProfile">
+            <summary>
+            Obtém o perfil do utilizador atualmente autenticado.
+            </summary>
+            <remarks>
+            Requer um token JWT válido no cabeçalho Authorization.
+            Extrai o ID do utilizador das Claims do token.
+            </remarks>
+            <returns>Os detalhes do perfil do utilizador.</returns>
+            <response code="200">Perfil obtido com sucesso.</response>
+            <response code="401">Utilizador não autenticado ou token inválido.</response>
+            <response code="400">Erro ao processar o pedido ou utilizador não encontrado.</response>
+        </member>
+        <member name="M:SmartSurfSpots.API.Controllers.SpotsController.GetAllSpots">
+            <summary>
+            Lista todos os spots de surf disponíveis.
+            </summary>
+            <remarks>
+            Retorna uma lista completa de spots registados na plataforma.
+            Requer autenticação.
+            </remarks>
+            <returns>Lista de spots.</returns>
+            <response code="200">Lista obtida com sucesso.</response>
+            <response code="401">Utilizador não autenticado.</response>
+            <response code="400">Erro ao processar o pedido.</response>
+        </member>
+        <member name="M:SmartSurfSpots.API.Controllers.SpotsController.GetSpotById(System.Int32)">
+            <summary>
+            Obtém os detalhes de um spot específico pelo ID.
+            </summary>
+            <param name="id">O identificador único do spot.</param>
+            <returns>Dados detalhados do spot.</returns>
+            <response code="200">Spot encontrado com sucesso.</response>
+            <response code="404">Spot não encontrado.</response>
+            <response code="401">Utilizador não autenticado.</response>
+        </member>
+        <member name="M:SmartSurfSpots.API.Controllers.SpotsController.CreateSpot(SmartSurfSpots.Domain.DTOs.CreateSpotRequest)">
+            <summary>
+            Cria um novo spot de surf.
+            </summary>
+            <remarks>
+            O utilizador autenticado será associado como criador do spot.
+            </remarks>
+            <param name="request">Dados do novo spot (Nome, Localização, Dificuldade, etc.).</param>
+            <returns>O spot criado.</returns>
+            <response code="201">Spot criado com sucesso.</response>
+            <response code="400">Dados inválidos ou erro na criação.</response>
+            <response code="401">Utilizador não autenticado.</response>
+        </member>
+        <member name="M:SmartSurfSpots.API.Controllers.SpotsController.UpdateSpot(System.Int32,SmartSurfSpots.Domain.DTOs.UpdateSpotRequest)">
+            <summary>
+            Atualiza um spot existente.
+            </summary>
+            <remarks>
+            Apenas o criador do spot (ou admin) deve conseguir realizar esta ação (validado no serviço).
+            </remarks>
+            <param name="id">ID do spot a atualizar.</param>
+            <param name="request">Novos dados do spot.</param>
+            <returns>O spot atualizado.</returns>
+            <response code="200">Spot atualizado com sucesso.</response>
+            <response code="400">Erro de validação ou permissão negada.</response>
+            <response code="401">Utilizador não autenticado.</response>
+        </member>
+        <member name="M:SmartSurfSpots.API.Controllers.SpotsController.DeleteSpot(System.Int32)">
+            <summary>
+            Apaga um spot do sistema.
+            </summary>
+            <remarks>
+            Apenas o criador ou admin podem apagar o spot.
+            </remarks>
+            <param name="id">ID do spot a remover.</param>
+            <returns>Mensagem de sucesso.</returns>
+            <response code="200">Spot apagado com sucesso.</response>
+            <response code="400">Erro ao apagar (ex: spot não existe ou sem permissão).</response>
+            <response code="401">Utilizador não autenticado.</response>
+        </member>
+        <member name="M:SmartSurfSpots.API.Controllers.WeatherController.GetWeather(System.Int32)">
+            <summary>
+            Obtém as condições meteorológicas e de surf para um spot específico.
+            </summary>
+            <remarks>
+            Retorna dados como altura das ondas, direção do vento, temperatura e período das ondas.
+            Útil para verificar se o spot está "surfável" no momento.
+            </remarks>
+            <param name="spotId">O ID do spot para o qual se pretende a previsão.</param>
+            <returns>Dados meteorológicos atuais e previsão.</returns>
+            <response code="200">Dados meteorológicos obtidos com sucesso.</response>
+            <response code="400">Erro ao obter dados (ex: ID inválido ou falha no serviço externo).</response>
+            <response code="401">Utilizador não autenticado.</response>
+            <response code="404">Spot não encontrado (se o serviço suportar esta verificação).</response>
+        </member>
+    </members>
+</doc>

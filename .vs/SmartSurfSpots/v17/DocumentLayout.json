@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pedro Duarte\\source\\repos\\SmartSurfSpots\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09AEB94B-A5A6-443D-809F-1BCB9F4B7250}|SmartSurfSpots.WebClient\\SmartSurfSpots.WebClient.csproj|c:\\users\\pedro duarte\\source\\repos\\smartsurfspots\\smartsurfspots.webclient\\wwwroot\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{09AEB94B-A5A6-443D-809F-1BCB9F4B7250}|SmartSurfSpots.WebClient\\SmartSurfSpots.WebClient.csproj|solutionrelative:smartsurfspots.webclient\\wwwroot\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09AEB94B-A5A6-443D-809F-1BCB9F4B7250}|SmartSurfSpots.WebClient\\SmartSurfSpots.WebClient.csproj|c:\\users\\pedro duarte\\source\\repos\\smartsurfspots\\smartsurfspots.webclient\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{09AEB94B-A5A6-443D-809F-1BCB9F4B7250}|SmartSurfSpots.WebClient\\SmartSurfSpots.WebClient.csproj|solutionrelative:smartsurfspots.webclient\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\source\\repos\\SmartSurfSpots\\SmartSurfSpots.WebClient\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "SmartSurfSpots.WebClient\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\Pedro Duarte\\source\\repos\\SmartSurfSpots\\SmartSurfSpots.WebClient\\wwwroot\\index.html",
+              "RelativeToolTip": "SmartSurfSpots.WebClient\\wwwroot\\index.html",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-12-22T19:44:26.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.js",
+              "DocumentMoniker": "C:\\Users\\Pedro Duarte\\source\\repos\\SmartSurfSpots\\SmartSurfSpots.WebClient\\wwwroot\\app.js",
+              "RelativeDocumentMoniker": "SmartSurfSpots.WebClient\\wwwroot\\app.js",
+              "ToolTip": "C:\\Users\\Pedro Duarte\\source\\repos\\SmartSurfSpots\\SmartSurfSpots.WebClient\\wwwroot\\app.js",
+              "RelativeToolTip": "SmartSurfSpots.WebClient\\wwwroot\\app.js",
+              "ViewState": "AgIAAGwBAAAAAAAAAAAhwGABAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-22T19:39:55.062Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

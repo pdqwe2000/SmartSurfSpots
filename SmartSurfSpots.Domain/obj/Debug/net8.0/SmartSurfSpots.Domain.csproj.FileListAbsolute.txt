@@ -1,0 +1,34 @@
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.Domain\bin\Debug\net8.0\SmartSurfSpots.Domain.deps.json
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.Domain\bin\Debug\net8.0\SmartSurfSpots.Domain.dll
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.Domain\bin\Debug\net8.0\SmartSurfSpots.Domain.pdb
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.AssemblyInfoInputs.cache
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.AssemblyInfo.cs
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.dll
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\refint\SmartSurfSpots.Domain.dll
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.pdb
+C:\Users\Pedro Duarte\source\repos\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\ref\SmartSurfSpots.Domain.dll
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.Domain\bin\Debug\net8.0\SmartSurfSpots.Domain.deps.json
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.Domain\bin\Debug\net8.0\SmartSurfSpots.Domain.dll
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.Domain\bin\Debug\net8.0\SmartSurfSpots.Domain.pdb
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.AssemblyInfoInputs.cache
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.AssemblyInfo.cs
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.dll
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\refint\SmartSurfSpots.Domain.dll
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.pdb
+C:\Users\Fujimota\Desktop\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\ref\SmartSurfSpots.Domain.dll
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.Domain\bin\Debug\net8.0\SmartSurfSpots.Domain.deps.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.Domain\bin\Debug\net8.0\SmartSurfSpots.Domain.dll
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.Domain\bin\Debug\net8.0\SmartSurfSpots.Domain.pdb
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.AssemblyInfoInputs.cache
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.AssemblyInfo.cs
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.sourcelink.json
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.dll
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\refint\SmartSurfSpots.Domain.dll
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\SmartSurfSpots.Domain.pdb
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.Domain\obj\Debug\net8.0\ref\SmartSurfSpots.Domain.dll
