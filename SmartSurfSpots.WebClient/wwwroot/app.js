@@ -1,4 +1,4 @@
-const API_URL = "https://smartsurfspots-production.up.railway.app" 
+const API_URL = "https://smartsurfspots-production.up.railway.app/api" // AJUSTAR PORTA DA SUA API!
 
 let token = localStorage.getItem("token")
 let user = JSON.parse(localStorage.getItem("user") || "null")
