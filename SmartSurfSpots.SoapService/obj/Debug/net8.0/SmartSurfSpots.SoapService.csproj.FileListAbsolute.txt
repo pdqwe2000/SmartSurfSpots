@@ -423,7 +423,6 @@ C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.SoapService\bin
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.SoapService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.SoapService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.SoapService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.SoapService\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.SoapService\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.SoapService\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.SoapService\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -565,3 +564,5 @@ C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.SoapService\obj
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.SoapService\obj\Debug\net8.0\SmartSurfSpots.SoapService.pdb
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.SoapService\obj\Debug\net8.0\SmartSurfSpots.SoapService.genruntimeconfig.cache
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.SoapService\obj\Debug\net8.0\ref\SmartSurfSpots.SoapService.dll
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.SoapService\bin\Debug\net8.0\Npgsql.dll
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.SoapService\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

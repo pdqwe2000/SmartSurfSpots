@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartSurfSpots.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6be6735b78ef211e0bf9aedff60ac336536282b5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2aa8a0dc50026fb83606fb277dffa761c0944a5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartSurfSpots.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartSurfSpots.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

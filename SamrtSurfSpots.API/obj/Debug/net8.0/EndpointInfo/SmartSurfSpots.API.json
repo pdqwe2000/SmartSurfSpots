@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Smart Surf Spots API",
-    "description": "API para gestão de spots de surf com autenticação JWT e integração meteorológica.",
+    "description": "API para gestão de spots de surf com autenticação JWT",
     "version": "v1"
   },
   "paths": {
@@ -11,10 +11,7 @@
         "tags": [
           "Auth"
         ],
-        "summary": "Regista um novo utilizador no sistema.",
-        "description": "Cria uma nova conta de utilizador com os dados fornecidos e retorna a confirmação.",
         "requestBody": {
-          "description": "O objeto contendo os dados de registo (Nome, Email, Password).",
           "content": {
             "application/json": {
               "schema": {
@@ -35,10 +32,10 @@
         },
         "responses": {
           "200": {
-            "description": "Utilizador registado com sucesso."
+            "description": "OK"
           },
           "400": {
-            "description": "Falha na validação dos dados ou o utilizador já existe.",
+            "description": "Bad Request",
             "content": {
               "application/json": {
                 "schema": {
@@ -55,10 +52,7 @@
         "tags": [
           "Auth"
         ],
-        "summary": "Autentica um utilizador e gera um token de acesso (JWT).",
-        "description": "Verifica as credenciais (email e password). Se corretas, retorna um token para ser usado nos endpoints protegidos.",
         "requestBody": {
-          "description": "Credenciais de acesso do utilizador.",
           "content": {
             "application/json": {
               "schema": {
@@ -79,10 +73,10 @@
         },
         "responses": {
           "200": {
-            "description": "Login efetuado com sucesso."
+            "description": "OK"
           },
           "400": {
-            "description": "Credenciais inválidas (email ou password incorretos).",
+            "description": "Bad Request",
             "content": {
               "application/json": {
                 "schema": {
@@ -99,14 +93,12 @@
         "tags": [
           "Auth"
         ],
-        "summary": "Obtém o perfil do utilizador atualmente autenticado.",
-        "description": "Requer um token JWT válido no cabeçalho Authorization.\r\nExtrai o ID do utilizador das Claims do token.",
         "responses": {
           "200": {
-            "description": "Perfil obtido com sucesso."
+            "description": "OK"
           },
           "401": {
-            "description": "Utilizador não autenticado ou token inválido.",
+            "description": "Unauthorized",
             "content": {
               "application/json": {
                 "schema": {
@@ -116,7 +108,7 @@
             }
           },
           "400": {
-            "description": "Erro ao processar o pedido ou utilizador não encontrado.",
+            "description": "Bad Request",
             "content": {
               "application/json": {
                 "schema": {
@@ -133,7 +125,6 @@
         "tags": [
           "CheckIns"
         ],
-        "summary": "Fazer check-in num spot",
         "requestBody": {
           "content": {
             "application/json": {
@@ -165,7 +156,6 @@
         "tags": [
           "CheckIns"
         ],
-        "summary": "Obter os meus check-ins",
         "responses": {
           "200": {
             "description": "OK"
@@ -178,7 +168,6 @@
         "tags": [
           "CheckIns"
         ],
-        "summary": "Obter check-ins de um spot específico",
         "parameters": [
           {
             "name": "spotId",
@@ -202,7 +191,6 @@
         "tags": [
           "CheckIns"
         ],
-        "summary": "Obter detalhes de um check-in",
         "parameters": [
           {
             "name": "id",
@@ -224,7 +212,6 @@
         "tags": [
           "CheckIns"
         ],
-        "summary": "Apagar check-in (apenas o próprio)",
         "parameters": [
           {
             "name": "id",
@@ -248,14 +235,12 @@
         "tags": [
           "Spots"
         ],
-        "summary": "Lista todos os spots de surf disponíveis.",
-        "description": "Retorna uma lista completa de spots registados na plataforma.\r\nRequer autenticação.",
         "responses": {
           "200": {
-            "description": "Lista obtida com sucesso."
+            "description": "OK"
           },
           "401": {
-            "description": "Utilizador não autenticado.",
+            "description": "Unauthorized",
             "content": {
               "application/json": {
                 "schema": {
@@ -265,7 +250,7 @@
             }
           },
           "400": {
-            "description": "Erro ao processar o pedido.",
+            "description": "Bad Request",
             "content": {
               "application/json": {
                 "schema": {
@@ -280,10 +265,7 @@
         "tags": [
           "Spots"
         ],
-        "summary": "Cria um novo spot de surf.",
-        "description": "O utilizador autenticado será associado como criador do spot.",
         "requestBody": {
-          "description": "Dados do novo spot (Nome, Localização, Dificuldade, etc.).",
           "content": {
             "application/json": {
               "schema": {
@@ -304,10 +286,10 @@
         },
         "responses": {
           "201": {
-            "description": "Spot criado com sucesso."
+            "description": "Created"
           },
           "400": {
-            "description": "Dados inválidos ou erro na criação.",
+            "description": "Bad Request",
             "content": {
               "application/json": {
                 "schema": {
@@ -317,7 +299,7 @@
             }
           },
           "401": {
-            "description": "Utilizador não autenticado.",
+            "description": "Unauthorized",
             "content": {
               "application/json": {
                 "schema": {
@@ -334,12 +316,10 @@
         "tags": [
           "Spots"
         ],
-        "summary": "Obtém os detalhes de um spot específico pelo ID.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "O identificador único do spot.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -349,10 +329,10 @@
         ],
         "responses": {
           "200": {
-            "description": "Spot encontrado com sucesso."
+            "description": "OK"
           },
           "404": {
-            "description": "Spot não encontrado.",
+            "description": "Not Found",
             "content": {
               "application/json": {
                 "schema": {
@@ -362,7 +342,7 @@
             }
           },
           "401": {
-            "description": "Utilizador não autenticado.",
+            "description": "Unauthorized",
             "content": {
               "application/json": {
                 "schema": {
@@ -377,13 +357,10 @@
         "tags": [
           "Spots"
         ],
-        "summary": "Atualiza um spot existente.",
-        "description": "Apenas o criador do spot (ou admin) deve conseguir realizar esta ação (validado no serviço).",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "ID do spot a atualizar.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -392,7 +369,6 @@
           }
         ],
         "requestBody": {
-          "description": "Novos dados do spot.",
           "content": {
             "application/json": {
               "schema": {
@@ -413,10 +389,10 @@
         },
         "responses": {
           "200": {
-            "description": "Spot atualizado com sucesso."
+            "description": "OK"
           },
           "400": {
-            "description": "Erro de validação ou permissão negada.",
+            "description": "Bad Request",
             "content": {
               "application/json": {
                 "schema": {
@@ -426,7 +402,7 @@
             }
           },
           "401": {
-            "description": "Utilizador não autenticado.",
+            "description": "Unauthorized",
             "content": {
               "application/json": {
                 "schema": {
@@ -441,13 +417,10 @@
         "tags": [
           "Spots"
         ],
-        "summary": "Apaga um spot do sistema.",
-        "description": "Apenas o criador ou admin podem apagar o spot.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "ID do spot a remover.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -457,10 +430,10 @@
         ],
         "responses": {
           "200": {
-            "description": "Spot apagado com sucesso."
+            "description": "OK"
           },
           "400": {
-            "description": "Erro ao apagar (ex: spot não existe ou sem permissão).",
+            "description": "Bad Request",
             "content": {
               "application/json": {
                 "schema": {
@@ -470,7 +443,7 @@
             }
           },
           "401": {
-            "description": "Utilizador não autenticado.",
+            "description": "Unauthorized",
             "content": {
               "application/json": {
                 "schema": {
@@ -487,13 +460,10 @@
         "tags": [
           "Weather"
         ],
-        "summary": "Obtém as condições meteorológicas e de surf para um spot específico.",
-        "description": "Retorna dados como altura das ondas, direção do vento, temperatura e período das ondas.\r\nÚtil para verificar se o spot está \"surfável\" no momento.",
         "parameters": [
           {
             "name": "spotId",
             "in": "path",
-            "description": "O ID do spot para o qual se pretende a previsão.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -503,10 +473,10 @@
         ],
         "responses": {
           "200": {
-            "description": "Dados meteorológicos obtidos com sucesso."
+            "description": "OK"
           },
           "400": {
-            "description": "Erro ao obter dados (ex: ID inválido ou falha no serviço externo).",
+            "description": "Bad Request",
             "content": {
               "application/json": {
                 "schema": {
@@ -516,7 +486,7 @@
             }
           },
           "401": {
-            "description": "Utilizador não autenticado.",
+            "description": "Unauthorized",
             "content": {
               "application/json": {
                 "schema": {
@@ -526,7 +496,7 @@
             }
           },
           "404": {
-            "description": "Spot não encontrado (se o serviço suportar esta verificação).",
+            "description": "Not Found",
             "content": {
               "application/json": {
                 "schema": {
@@ -714,7 +684,7 @@
     "securitySchemes": {
       "Bearer": {
         "type": "apiKey",
-        "description": "Insira o token JWT desta forma: Bearer {seu_token}",
+        "description": "JWT Authorization header usando o esquema Bearer. Exemplo: 'Bearer {token}'",
         "name": "Authorization",
         "in": "header"
       }

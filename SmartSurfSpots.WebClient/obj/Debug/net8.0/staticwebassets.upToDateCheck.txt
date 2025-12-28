@@ -1,5 +1,5 @@
+wwwroot\index.html
 wwwroot\login.html
 wwwroot\register.html
-wwwroot\app.js
-wwwroot\index.html
 wwwroot\style.css
+wwwroot\app.js
