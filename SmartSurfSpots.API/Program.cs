@@ -153,6 +153,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// Aplicar migrations automaticamente no startup
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<SurfDbContext>();
+    db.Database.Migrate();
+}
+
 app.Run();
 
 // Converter URL do Railway PostgreSQL para connection string
