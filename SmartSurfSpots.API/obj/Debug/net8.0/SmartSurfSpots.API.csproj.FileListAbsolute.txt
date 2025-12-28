@@ -629,3 +629,4 @@ C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.API\obj\Debug\n
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.API\obj\Debug\net8.0\SmartSurfSpots.API.pdb
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.API\obj\Debug\net8.0\SmartSurfSpots.API.genruntimeconfig.cache
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.API\obj\Debug\net8.0\ref\SmartSurfSpots.API.dll
+C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

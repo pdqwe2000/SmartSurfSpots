@@ -50,7 +50,7 @@ namespace SmartSurfSpots.Data
                 entity.Property(e => e.PasswordHash).IsRequired();
 
                 // Define que a data é gerada pelo SQL Server (função GETDATE()) ao inserir
-                entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+                entity.Property(e => e.CreatedAt);
             });
 
             // ==============================================================================
@@ -68,7 +68,7 @@ namespace SmartSurfSpots.Data
                 // O Enum 'Level' será gravado como int (1, 2, 3)
                 entity.Property(e => e.Level).IsRequired();
 
-                entity.Property(e => e.CreatedAt).HasDefaultValueSql("GETDATE()");
+                entity.Property(e => e.CreatedAt);
 
                 // Relação: Um Spot tem UM Criador (User), Um User tem MUITOS Spots.
                 entity.HasOne(e => e.Creator)
@@ -86,7 +86,7 @@ namespace SmartSurfSpots.Data
             {
                 entity.HasKey(e => e.Id);
 
-                entity.Property(e => e.DateTime).HasDefaultValueSql("GETDATE()");
+                entity.Property(e => e.DateTime);
                 entity.Property(e => e.Notes).HasMaxLength(500);
 
                 // Relação: CheckIn -> User
