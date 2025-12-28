@@ -622,7 +622,6 @@ C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.API\obj\Debug\n
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.API\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.API\obj\Debug\net8.0\swae.build.ex.cache
-C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.API\obj\Debug\net8.0\SmartSur.460CB54E.Up2Date
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.API\obj\Debug\net8.0\SmartSurfSpots.API.dll
 C:\Users\Fujimota\Documents\GitHub\SmartSurfSpots\SmartSurfSpots.API\obj\Debug\net8.0\refint\SmartSurfSpots.API.dll

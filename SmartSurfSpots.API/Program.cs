@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -29,10 +29,10 @@ builder.Services.AddSwaggerGen(c =>
     {
         Title = "Smart Surf Spots API",
         Version = "v1",
-        Description = "API para gest�o de spots de surf com autentica��o JWT"
+        Description = "API para gestão de spots de surf com autenticação JWT"
     });
 
-    // Configurar autentica��o JWT no Swagger
+    // Configurar autenticação JWT no Swagger
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Description = "JWT Authorization header usando o esquema Bearer. Exemplo: 'Bearer {token}'",
@@ -137,12 +137,32 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+// Aplicar migrations automaticamente no startup (apenas em produção)
+if (!app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    using (var scope = app.Services.CreateScope())
+    {
+        try
+        {
+            var db = scope.ServiceProvider.GetRequiredService<SurfDbContext>();
+            db.Database.Migrate();
+            Console.WriteLine("✓ Database migrations applied successfully");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"✗ Error applying migrations: {ex.Message}");
+        }
+    }
 }
+
+// Configure the HTTP request pipeline.
+// Ativar Swagger em todos os ambientes (desenvolvimento e produção)
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Smart Surf Spots API v1");
+    c.RoutePrefix = string.Empty; // Swagger na raiz (https://localhost:XXXX/)
+});
 
 app.UseHttpsRedirection();
 
@@ -152,8 +172,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-
-
 
 app.Run();
 
