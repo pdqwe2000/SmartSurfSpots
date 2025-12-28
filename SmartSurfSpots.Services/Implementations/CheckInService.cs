@@ -33,7 +33,7 @@ namespace SmartSurfSpots.Services.Implementations
             {
                 UserId = userId,
                 SpotId = request.SpotId,
-                DateTime = DateTime.Now,
+                DateTime = DateTime.UtcNow,
                 Notes = request.Notes
             };
 

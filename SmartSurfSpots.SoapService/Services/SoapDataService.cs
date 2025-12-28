@@ -107,7 +107,7 @@ namespace SmartSurfSpots.SoapService.Services
                 Description = request.Description,
                 Level = (SpotLevel)request.Level,
                 CreatedBy = request.CreatedBy,
-                CreatedAt = DateTime.Now
+                CreatedAt = DateTime.UtcNow
             };
 
             _context.Spots.Add(spot);
@@ -149,7 +149,7 @@ namespace SmartSurfSpots.SoapService.Services
             {
                 UserId = request.UserId,
                 SpotId = request.SpotId,
-                DateTime = DateTime.Now,
+                DateTime = DateTime.UtcNow,
                 Notes = request.Notes
             };
 

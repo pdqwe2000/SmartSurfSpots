@@ -46,7 +46,7 @@ namespace SmartSurfSpots.Services.Helpers
                 issuer: _configuration["JwtSettings:Issuer"],
                 audience: _configuration["JwtSettings:Audience"],
                 claims: claims,
-                expires: DateTime.Now.AddHours(expiryHours),
+                expires: DateTime.UtcNow.AddHours(expiryHours),
                 signingCredentials: credentials
             );
 

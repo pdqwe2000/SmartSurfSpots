@@ -37,7 +37,7 @@ namespace SmartSurfSpots.Services.Implementations
                 Name = request.Name,
                 Email = request.Email,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
-                CreatedAt = DateTime.Now
+                CreatedAt = DateTime.UtcNow
             };
 
             await _userRepository.AddAsync(user);

@@ -63,7 +63,7 @@ namespace SmartSurfSpots.Services.Implementations
                 Description = request.Description,
                 Level = (SpotLevel)request.Level, // Cast int -> Enum
                 CreatedBy = userId,
-                CreatedAt = DateTime.Now
+                CreatedAt = DateTime.UtcNow
             };
 
             await _spotRepository.AddAsync(spot);

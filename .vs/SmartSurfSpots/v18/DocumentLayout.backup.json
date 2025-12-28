@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1BEE64E4-D55C-4989-AA39-DF3247711665}|SmartSurfSpots.Data\\SmartSurfSpots.Data.csproj|c:\\users\\fujimota\\documents\\github\\smartsurfspots\\smartsurfspots.data\\migrations\\20251228182758_initialcreatepostgres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEE64E4-D55C-4989-AA39-DF3247711665}|SmartSurfSpots.Data\\SmartSurfSpots.Data.csproj|solutionrelative:smartsurfspots.data\\migrations\\20251228182758_initialcreatepostgres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{56F26E84-0F69-951C-54CA-33D1F9A194C9}|SmartSurfSpots.API\\SmartSurfSpots.API.csproj|c:\\users\\fujimota\\documents\\github\\smartsurfspots\\smartsurfspots.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{56F26E84-0F69-951C-54CA-33D1F9A194C9}|SmartSurfSpots.API\\SmartSurfSpots.API.csproj|solutionrelative:smartsurfspots.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -51,6 +55,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20251228182758_InitialCreatePostgres.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Data\\Migrations\\20251228182758_InitialCreatePostgres.cs",
+              "RelativeDocumentMoniker": "SmartSurfSpots.Data\\Migrations\\20251228182758_InitialCreatePostgres.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Data\\Migrations\\20251228182758_InitialCreatePostgres.cs",
+              "RelativeToolTip": "SmartSurfSpots.Data\\Migrations\\20251228182758_InitialCreatePostgres.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T18:27:58.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.API\\appsettings.json",
               "RelativeDocumentMoniker": "SmartSurfSpots.API\\appsettings.json",
@@ -63,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.API\\Program.cs",
               "RelativeDocumentMoniker": "SmartSurfSpots.API\\Program.cs",
@@ -76,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SurfDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Data\\SurfDbContext.cs",
               "RelativeDocumentMoniker": "SmartSurfSpots.Data\\SurfDbContext.cs",
@@ -89,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SpotRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Data\\Repositories\\SpotRepository.cs",
               "RelativeDocumentMoniker": "SmartSurfSpots.Data\\Repositories\\SpotRepository.cs",
@@ -102,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Data\\Repositories\\Repository.cs",
               "RelativeDocumentMoniker": "SmartSurfSpots.Data\\Repositories\\Repository.cs",
@@ -115,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ISpotRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Data\\Repositories\\ISpotRepository.cs",
               "RelativeDocumentMoniker": "SmartSurfSpots.Data\\Repositories\\ISpotRepository.cs",
@@ -128,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Data\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "SmartSurfSpots.Data\\Repositories\\IRepository.cs",
