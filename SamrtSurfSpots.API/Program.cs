@@ -11,6 +11,13 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configurar porta do Railway
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(int.Parse(port));
+});
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -51,9 +58,28 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Configurar DbContext
-builder.Services.AddDbContext<SurfDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+// Configurar DbContext (PostgreSQL para Railway, SQL Server para local)
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+var usePostgres = builder.Configuration.GetValue<bool>("UsePostgreSQL");
+
+if (usePostgres || !string.IsNullOrEmpty(Environment.GetEnvironmentVariable("DATABASE_URL")))
+{
+    // Railway PostgreSQL
+    var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
+    if (!string.IsNullOrEmpty(databaseUrl))
+    {
+        connectionString = ConvertPostgresUrl(databaseUrl);
+    }
+
+    builder.Services.AddDbContext<SurfDbContext>(options =>
+        options.UseNpgsql(connectionString));
+}
+else
+{
+    // SQL Server local
+    builder.Services.AddDbContext<SurfDbContext>(options =>
+        options.UseSqlServer(connectionString));
+}
 
 // Configurar JWT Authentication
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
@@ -102,7 +128,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("https://localhost:7109", "http://localhost:5000")
+        policy.WithOrigins("https://localhost:7067", "http://localhost:5000") // Ajustar portas do WebClient
               .AllowAnyMethod()
               .AllowAnyHeader()
               .AllowCredentials();
@@ -128,3 +154,12 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+// Converter URL do Railway PostgreSQL para connection string
+static string ConvertPostgresUrl(string databaseUrl)
+{
+    var uri = new Uri(databaseUrl);
+    var userInfo = uri.UserInfo.Split(':');
+
+    return $"Host={uri.Host};Port={uri.Port};Database={uri.AbsolutePath.Trim('/')};Username={userInfo[0]};Password={userInfo[1]};SSL Mode=Require;Trust Server Certificate=true";
+}
