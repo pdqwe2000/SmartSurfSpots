@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FEF1B5D4-D3F4-4CA5-AB70-BCA5981F5B94}|Itens de Solu\u00E7\u00E3o{FEF1B5D4-D3F4-4CA5-AB70-BCA5981F5B94}|C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\railway.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FEF1B5D4-D3F4-4CA5-AB70-BCA5981F5B94}|Itens de Solu\u00E7\u00E3o{FEF1B5D4-D3F4-4CA5-AB70-BCA5981F5B94}|solutionrelative:railway.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56F26E84-0F69-951C-54CA-33D1F9A194C9}|SmartSurfSpots.API\\SmartSurfSpots.API.csproj|c:\\users\\fujimota\\documents\\github\\smartsurfspots\\smartsurfspots.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56F26E84-0F69-951C-54CA-33D1F9A194C9}|SmartSurfSpots.API\\SmartSurfSpots.API.csproj|solutionrelative:smartsurfspots.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1BEE64E4-D55C-4989-AA39-DF3247711665}|SmartSurfSpots.Data\\SmartSurfSpots.Data.csproj|c:\\users\\fujimota\\documents\\github\\smartsurfspots\\smartsurfspots.data\\smartsurfspots.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{1BEE64E4-D55C-4989-AA39-DF3247711665}|SmartSurfSpots.Data\\SmartSurfSpots.Data.csproj|solutionrelative:smartsurfspots.data\\smartsurfspots.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -38,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +58,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "railway.json",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\railway.json",
+              "RelativeDocumentMoniker": "railway.json",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\railway.json",
+              "RelativeToolTip": "railway.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-28T14:50:15.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.API\\Program.cs",
+              "RelativeDocumentMoniker": "SmartSurfSpots.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.API\\Program.cs",
+              "RelativeToolTip": "SmartSurfSpots.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T14:35:46.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SmartSurfSpots.WebClient",
               "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.WebClient\\SmartSurfSpots.WebClient.csproj",
               "RelativeDocumentMoniker": "SmartSurfSpots.WebClient\\SmartSurfSpots.WebClient.csproj",
@@ -63,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SmartSurfSpots.SoapService",
               "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.SoapService\\SmartSurfSpots.SoapService.csproj",
               "RelativeDocumentMoniker": "SmartSurfSpots.SoapService\\SmartSurfSpots.SoapService.csproj",
@@ -76,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SmartSurfSpots.Services",
               "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Services\\SmartSurfSpots.Services.csproj",
               "RelativeDocumentMoniker": "SmartSurfSpots.Services\\SmartSurfSpots.Services.csproj",
@@ -89,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "SmartSurfSpots.Domain",
               "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Domain\\SmartSurfSpots.Domain.csproj",
               "RelativeDocumentMoniker": "SmartSurfSpots.Domain\\SmartSurfSpots.Domain.csproj",
@@ -102,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SmartSurfSpots.Data",
               "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.Data\\SmartSurfSpots.Data.csproj",
               "RelativeDocumentMoniker": "SmartSurfSpots.Data\\SmartSurfSpots.Data.csproj",
@@ -115,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -128,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "app.js",
               "DocumentMoniker": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.WebClient\\wwwroot\\app.js",
               "RelativeDocumentMoniker": "SmartSurfSpots.WebClient\\wwwroot\\app.js",
