@@ -1,5 +1,4 @@
-// Configuração da API
-const API_URL = "https://localhost:7226/api" // AJUSTAR PORTA DA SUA API!
+const API_URL = "https://smartsurfspots-production.up.railway.app" 
 
 let token = localStorage.getItem("token")
 let user = JSON.parse(localStorage.getItem("user") || "null")

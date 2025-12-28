@@ -128,7 +128,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("https://localhost:7067", "http://localhost:5000") // Ajustar portas do WebClient
+        policy.WithOrigins("https://smartsurfspots-web-production.up.railway.app", "https://localhost:7109") // Ajustar portas do WebClient
               .AllowAnyMethod()
               .AllowAnyHeader()
               .AllowCredentials();
