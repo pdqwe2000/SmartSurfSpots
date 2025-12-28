@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartSurfSpots.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6be6735b78ef211e0bf9aedff60ac336536282b5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea4d3e4d7cf5403d247c9fa92b1f09187a4614db")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartSurfSpots.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartSurfSpots.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
 VisualStudioVersion = 18.1.11312.151
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSurfSpots.API", "SamrtSurfSpots.API\SmartSurfSpots.API.csproj", "{090870BE-36DF-4BE4-86B6-7F9DBA108650}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSurfSpots.Domain", "SmartSurfSpots.Domain\SmartSurfSpots.Domain.csproj", "{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSurfSpots.Data", "SmartSurfSpots.Data\SmartSurfSpots.Data.csproj", "{1BEE64E4-D55C-4989-AA39-DF3247711665}"
@@ -21,16 +19,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens
 		railway.json = railway.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSurfSpots.API", "SmartSurfSpots.API\SmartSurfSpots.API.csproj", "{56F26E84-0F69-951C-54CA-33D1F9A194C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{090870BE-36DF-4BE4-86B6-7F9DBA108650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{090870BE-36DF-4BE4-86B6-7F9DBA108650}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{090870BE-36DF-4BE4-86B6-7F9DBA108650}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{090870BE-36DF-4BE4-86B6-7F9DBA108650}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1C9E519-4F67-4DE5-91DD-217EDBFD14E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{09AEB94B-A5A6-443D-809F-1BCB9F4B7250}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09AEB94B-A5A6-443D-809F-1BCB9F4B7250}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09AEB94B-A5A6-443D-809F-1BCB9F4B7250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56F26E84-0F69-951C-54CA-33D1F9A194C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F26E84-0F69-951C-54CA-33D1F9A194C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F26E84-0F69-951C-54CA-33D1F9A194C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F26E84-0F69-951C-54CA-33D1F9A194C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

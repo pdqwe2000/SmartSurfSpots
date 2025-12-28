@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fWv9GxRMp8w=",
+  "dgSpecHash": "JXNOMFkHCb4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SamrtSurfSpots.API\\SmartSurfSpots.API.csproj",
+  "projectFilePath": "C:\\Users\\Fujimota\\Documents\\GitHub\\SmartSurfSpots\\SmartSurfSpots.API\\SmartSurfSpots.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fujimota\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Fujimota\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
